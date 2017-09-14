@@ -1,0 +1,20 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<h1 id = "titleText"> Welcome fellow Jhin Mains </h1>
+<p id = "firstSentence"> This little web app will find out all of your jhin stats and tell you how good at jhin you are from a score of 1.4-4.4</p>
+<p id = "ps"> P.S. Do not take any of this seriously. I am just doing this for fun.</p>
+<div id = "inputBox">
+  <p id = "informText"> Enter your summoner name below to get started </p>
+  <label for = "summonerNameBox">Summoner Name:</label>
+  <input id = "summonerNameBox" #box (keyup.enter)="update(box.value)" >
+</div>
+<div id = "submitButton">
+  <a routerLink="jhin"><button>Let the Journey Begin</button></a>
+</div>
+<p>Your summoner name is {{employees.name}}</p>
+<p>Your profile icon Id is {{employees.profileIconId}}</p>
+<p>Your summoner level is  {{employees.summonerLevel}}</p>
+<p>Your account Id is {{employees.accountId}}</p>
+<p>Your summoner id is {{employees.id}} <b>(Make sure you save this to your clipboard for the next page. You will need it.)</b></p>
+
+
+
