@@ -2,18 +2,34 @@
 
 
 <p>___________, What's the drama in that?</p>
+
+<label for = "summonerNameBox">Answer:</label>
 <input id = "summonerNameBox" #box (keyup.enter)="answer1(box.value)" >
-<p *ngIf='this.value == this.firstAnswer'>good 4 you</p>
+
+<p *ngIf='this.value.length > 2 && this.value == this.firstAnswer'>Good job!</p>
+<p *ngIf='this.value.length > 2 && this.value != this.firstAnswer'>You don't know anything. You definitely are not a jhin main.!</p>
+
 
 <p> I suppose I must make do with this _________ setting</p>
 
-<input>
+<label for = "summonerNameBox2">Answer:</label>
+<input id = "summonerNameBox2" #box2 (keyup.enter)="answer2(box2.value)" >
+
+<p *ngIf='this.value2.length > 2 && this.value2 == this.secondAnswer'>Amazing!</p>
+<p *ngIf='this.value2.length > 2 && this.value2 != this.secondAnswer'>This one was so easy too!</p>
 
 <p> I cannot be good. I must be ________</p>
 
-<input>
+<label for = "summonerNameBox3">Answer:</label>
+<input id = "summonerNameBox3" #box3 (keyup.enter)="answer3(box3.value)" >
+
+<p *ngIf='this.value3.length > 2 && this.value3 == this.thirdAnswer'>Keep it up!</p>
+<p *ngIf='this.value3.length > 2 && this.value3 != this.thirdAnswer'>you obviously aren't perfect</p>
 
 <p> Each bullet is a piece of my soul. Each _____ is a piece of me.</p>
 
-<input>
+<label for = "summonerNameBox4">Answer:</label>
+<input id = "summonerNameBox4" #box4 (keyup.enter)="answer4(box4.value)" >
 
+<p *ngIf='this.value4.length > 2 && this.value4 == this.fourthAnswer'>Fantastic!</p>
+<p *ngIf='this.value4.length > 2 && this.value4 != this.fourthAnswer'>You probably don't even know Rammus quotes at this point. ok?</p>
