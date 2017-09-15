@@ -1,3 +1,20 @@
 #ratioTitle {
   text-align: center;
 }
+body {
+  height: 100%;
+  margin: 0;
+}
+.bg {
+  background-image: url("High-Noon-Jhin.jpg");
+  height:470px;
+  background-size: cover;
+}
+.text {
+  color: white;
+  outline:black;
+}
+#blackbox {
+  background-color: black;
+  width: 300px;
+}

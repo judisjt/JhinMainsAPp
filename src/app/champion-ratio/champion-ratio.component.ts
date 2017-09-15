@@ -16,7 +16,7 @@ export class ChampionRatioComponent implements OnInit {
   ngOnInit() {}
   update(box: string) {
     this.inputValue = box;
-    this.key = 'RGAPI-a86403ef-5178-4611-9bb1-fa3400f77cce';
+    this.key = 'RGAPI-823cc599-f2cb-407e-bbb4-751298697998';
     this.url = 'https://na1.api.riotgames.com/lol/league/v3/positions/by-summoner/' + this.inputValue + '?api_key=' + this.key;
     this._employeeService.getRatio(this.url)
       .subscribe(resEmployeeData => this.employees = resEmployeeData);

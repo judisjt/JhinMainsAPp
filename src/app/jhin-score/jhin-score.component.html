@@ -1,15 +1,19 @@
+<body>
+<div class = "bg">
 <h2 id = title>Your Jhin Mastery Rating</h2>
 <label for = "summonerNameBox">Summoner Id:</label>
 <input id = "summonerNameBox" #box (keyup.enter)="update(box.value)" >
-<p>Here is the information about your masteries.</p>
+<p class = "text">Here is the information about your masteries.</p>
 <ul>
-  <li>Mastery score on Jhin: {{employees.championPoints}}</li>
-  <li>Mastery level on Jhin: {{employees.championLevel}}</li>
+  <li class = "listText">Mastery score on Jhin: {{employees.championPoints}}</li>
+  <li class = "listText">Mastery level on Jhin: {{employees.championLevel}}</li>
 </ul>
-<p *ngIf='employees.championPoints < 10000'>you do not have enough mastery points for me to respect you as a good jhin player</p>
-<p *ngIf='employees.championPoints > 10000'>you have played way too much Jhin and have become a respectful player in our community</p>
+<p class = "text" *ngIf='employees.championPoints < 10000'>you do not have enough mastery points for me to respect you as a good jhin player</p>
+<p class = "text" *ngIf='employees.championPoints > 10000'>you have played way too much Jhin and have become a respectful player in our community</p>
 
-<p *ngIf='employees.championLevel < 7'>you are not even mastery level seven. How do you call yourself a Jhin Main????</p>
-<p *ngIf='employees.championLevel == 7'>You are a level 7 Jhin god. Some would say that your plays are Jhinsane.</p>
+<p class = "text"  *ngIf='employees.championLevel < 7'>you are not even mastery level seven. How do you call yourself a Jhin Main????</p>
+<p class = "text" *ngIf='employees.championLevel == 7'>You are a level 7 Jhin god. Some would say that your plays are Jhinsane.</p>
 
 <a routerLink="win"><button>NextPage</button></a>
+</div>
+</body>

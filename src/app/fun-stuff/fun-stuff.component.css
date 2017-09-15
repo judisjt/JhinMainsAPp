@@ -1,0 +1,22 @@
+body {
+  height: 100%;
+  margin: 0;
+}
+.bg {
+  background-image: url("number4.png");
+  height: 525px;
+  margin-top: 20px;
+}
+#blackbox {
+  background-color: black;
+  width: 426px;
+  height: 550px;
+}
+.text {
+  color: white;
+  margin-left: 20px;
+  padding:5px;
+}
+#title {
+  text-align: center;
+}

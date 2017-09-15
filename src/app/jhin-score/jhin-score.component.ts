@@ -16,7 +16,7 @@ export class JhinScoreComponent implements OnInit {
   ngOnInit() {}
   update(box: string) {
     this.inputValue = box;
-    this.key = 'RGAPI-a86403ef-5178-4611-9bb1-fa3400f77cce';
+    this.key = 'RGAPI-823cc599-f2cb-407e-bbb4-751298697998';
     this.url = 'https://na1.api.riotgames.com/lol/champion-mastery/v3/champion-masteries/by-summoner/' + this.inputValue + '/by-champion/202?api_key=' + this.key;
     this._employeeService.getMasteryLevel(this.url)
       .subscribe(resEmployeeData => this.employees = resEmployeeData);

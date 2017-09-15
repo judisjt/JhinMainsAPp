@@ -1,15 +1,31 @@
+body {
+  height: 100%;
+  margin: 0;
+}
+.bg {
+  background-image: url("jhin.jpg");
+  height: 900px;
+  background-size: cover;
+}
+.bottomText{
+  color: white;
+}
 #titleText {
   text-align: center;
+  color: white;
 }
 #firstSentence {
   text-align: center;
+  color: white;
 }
 #informText {
   text-align: center;
+  color: white;
 }
 #inputBox {
   text-align: center;
   margin-top: 30px;
+  color: white;
 }
 #submitButton {
   text-align: center;
@@ -17,4 +33,6 @@
 }
 #ps {
   text-align: center;
+  color: white;
 }
+

@@ -1,10 +1,15 @@
+<body>
+<div class = "bg">
 <h3 id = "ratioTitle">Here are you wins and losses on Jhin. Your ratio better be above 50% or so help me god</h3>
 <label for = "summonerNameBox">Summoner Id:</label>
 <input id = "summonerNameBox" #box (keyup.enter)="update(box.value)" >
-<p>You have won  {{employees[0].wins}} games on Jhin</p>
-<p>You have lost {{employees[0].losses}} games on Jhin.</p>
+  <div id = "blackbox">
+<p class = "text">You have won  {{employees[0].wins}} games on Jhin</p>
+<p class = "text">You have lost {{employees[0].losses}} games on Jhin.</p>
 
-<p *ngIf='employees[0].wins/employees[0].wins + employees[0].losses > 0.5'> Your win/loss ratio is above 50% and you did not dissapoint me.  </p>
-<p *ngIf='employees[0].wins/employees[0].wins + employees[0].losses < 0.5'> Your win/loss ratio is below 50%. Are you even a real Jhin main?  </p>
-
+<p class = "text" *ngIf='employees[0].wins/employees[0].wins + employees[0].losses > 0.5'> Your win/loss ratio is above 50% and you did not dissapoint me.  </p>
+<p class = "text" *ngIf='employees[0].wins/employees[0].wins + employees[0].losses < 0.5'> Your win/loss ratio is below 50%. Are you even a real Jhin main?  </p>
+  </div>>
 <a routerLink="funstuff"><button>NextPage</button></a>
+</div>
+</body>
